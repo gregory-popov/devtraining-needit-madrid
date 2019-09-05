@@ -22,12 +22,12 @@
 		],
 	};
 	
-	function __helperFormAddingOptions(selectOptionName, selectOptionTitle){
+	var __helperFormAddingOptions = function(selectOptionName, selectOptionTitle){
 		g_form.clearOptions('u_what_needed');
 		g_form.addOption('u_what_needed', selectOptionName.concat('1'), selectOptionTitle.concat(' 1'));
 		g_form.addOption('u_what_needed', selectOptionName.concat('2'), selectOptionTitle.concat(' 2'));
 		g_form.addOption('u_what_needed', 'other', 'Other');
-	}
+	};
 	
 	if (noNewValue) {
 		return;
@@ -50,7 +50,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>07c309bfdba3330050319b81ca9619f8</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>NeedIt Request Type Options</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
@@ -58,7 +58,7 @@
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_script_client_07c309bfdba3330050319b81ca9619f8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-09-04 11:48:36</sys_updated_on>
+        <sys_updated_on>2019-09-05 08:13:34</sys_updated_on>
         <table>x_58872_needit_needit</table>
         <type>onChange</type>
         <ui_type>10</ui_type>
